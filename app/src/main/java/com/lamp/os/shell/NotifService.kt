@@ -60,7 +60,7 @@ class NotifService : NotificationListenerService() {
         fun toggleDnd() {
             val s = instance ?: return
             try {
-                s.requestInterruptionFilter(if (dnd.value) INTERRUPTION_FILTER_ALL else INTERRUPTION_FILTER_PRIORITY)
+                s.requestInterruptionFilter(if (dnd.value) NotificationListenerService.INTERRUPTION_FILTER_ALL else NotificationListenerService.INTERRUPTION_FILTER_PRIORITY)
             } catch (_: Exception) {
             }
         }
