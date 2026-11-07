@@ -1,0 +1,4 @@
+-keep class org.osmdroid.** { *; }
+-dontwarn org.osmdroid.**
+-keep class com.lamp.os.** { *; }
+-ignorewarnings
